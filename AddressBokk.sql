@@ -41,10 +41,24 @@ SELECT * FROM AddressBook WHERE State='Maharashtra';
 
 --UC7-SIZE OF ADDRESS BOOK BY CITY OR STATE
 SELECT COUNT(*) AddressBook GROUP BY City='Jintur' GROUP BY City;
-SELECT COUNT(*) AddressBookDB WHERE State='MAHARASHTRA' GROUP BY State;
+SELECT COUNT(*) AddressBook WHERE State='MAHARASHTRA' GROUP BY State;
 
 --UC8-SORTED ALPHABETICALLY BY NAME
 SELECT * from AddressBook ORDER BY FirstName ASC;
+
+--UC9-IDENTYFY EACH ADDRESSBOOK BY NAME AND TYPE
+ALTER TABLE AddressBook ADD AddressBookType varchar(50);
+ALTER TABLE AddressBook ADD AddressBookName varchar(50);
+update AddressBook set AddressBookType='Family', AddressBookName='WXY' WHERE FirstName='KIRAN';
+update AddressBook set AddressBookType='Family', AddressBookName='WXY' WHERE FirstName='Sandeep';
+update AddressBook set AddressBookType='Friend', AddressBookName='WXY' WHERE FirstName='Kanchan';
+update AddressBook set AddressBookType='Friend', AddressBookName='WXY' WHERE FirstName='Gayatri';
+update AddressBook set AddressBookType='Friend', AddressBookName='WXY' WHERE FirstName='Prity';
+update AddressBook set AddressBookType='Profession', AddressBookName='WXY' WHERE FirstName='Kush';
+update AddressBook set AddressBookType='Profession', AddressBookName='WXY' WHERE FirstName='Sharad';
+update AddressBook set AddressBookType='Profession', AddressBookName='WXY' WHERE FirstName='Sai';
+update AddressBook set AddressBookType='Profession', AddressBookName='WXY' WHERE FirstName='Vijay';
+
 
 
 
