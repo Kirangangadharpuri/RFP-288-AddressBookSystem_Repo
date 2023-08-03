@@ -35,3 +35,9 @@ SELECT * FROM AddressBook;
 DELETE AddressBook WHERE FirstName='Ajay';
 SELECT * FROM AddressBook;
 
+--UC6-RETRIVE PERSON BELONGS TO CITY R STATE
+SELECT * FROM AddressBook WHERE City='Jintur';
+SELECT * FROM AddressBook WHERE State='Maharashtra';
+
+
+
