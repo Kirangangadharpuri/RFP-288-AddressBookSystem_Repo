@@ -31,3 +31,7 @@ SELECT * FROM AddressBook;
 UPDATE AddressBook SET PhoneNumber=8787878787 where FirstName='Vijay';
 SELECT * FROM AddressBook;
 
+--UC5-ABILITY TO DELETE PERSON USING PERSON NAME
+DELETE AddressBook WHERE FirstName='Ajay';
+SELECT * FROM AddressBook;
+
