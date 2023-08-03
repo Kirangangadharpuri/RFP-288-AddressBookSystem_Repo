@@ -39,5 +39,12 @@ SELECT * FROM AddressBook;
 SELECT * FROM AddressBook WHERE City='Jintur';
 SELECT * FROM AddressBook WHERE State='Maharashtra';
 
+--UC7-SIZE OF ADDRESS BOOK BY CITY OR STATE
+SELECT COUNT(*) AddressBook GROUP BY City='Jintur' GROUP BY City;
+SELECT COUNT(*) AddressBookDB WHERE State='MAHARASHTRA' GROUP BY State;
+
+
+
+
 
 
