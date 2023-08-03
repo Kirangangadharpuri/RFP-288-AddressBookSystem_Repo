@@ -26,3 +26,8 @@ INSERT INTO AddressBook VALUES('Kiran','Puri','Hutatma Smarak','Jintur','Maharas
 ('Ajay','Verma','Sakli','Pentra','Madhya Pradesh',431513,7878999999,'ajay@gmail.com');
 
 SELECT * FROM AddressBook;
+
+--UC4-UPDATE EXISTING CONTACT USING TEIR NAME
+UPDATE AddressBook SET PhoneNumber=8787878787 where FirstName='Vijay';
+SELECT * FROM AddressBook;
+
