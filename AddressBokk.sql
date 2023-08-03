@@ -43,6 +43,8 @@ SELECT * FROM AddressBook WHERE State='Maharashtra';
 SELECT COUNT(*) AddressBook GROUP BY City='Jintur' GROUP BY City;
 SELECT COUNT(*) AddressBookDB WHERE State='MAHARASHTRA' GROUP BY State;
 
+--UC8-SORTED ALPHABETICALLY BY NAME
+SELECT * from AddressBook ORDER BY FirstName ASC;
 
 
 
