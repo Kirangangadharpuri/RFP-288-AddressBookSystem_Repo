@@ -63,7 +63,11 @@ USE AddressBookServiceDB;
 --UC10
 SELECT AddressBookType,COUNT(AddressBookType) AS TOTALCOUNT FROM AddressBook GROUP BY AddressBookType;
 
-
+--UC11-ADD CONTACT FOR FRIEND AND FAMILY
+INSERT INTO AddressBook(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email,AddressBookType,AddressBookName) 
+ VALUES ('Nandini','Jadhav','CIDKO','AURANGABAD','Maharashtra',431007,9898989898,'nandini@gmail.com','Friend','FD'),
+ ('LALITA','PURI','SMARAK','JINTUR','Maharashtra',431509,8989898989,'lalita@gmail.com','Family','FL');
+ SELECT * FROM AddressBook;
 
 
 
