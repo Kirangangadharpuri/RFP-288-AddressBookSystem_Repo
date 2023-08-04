@@ -58,7 +58,10 @@ update AddressBook set AddressBookType='Profession', AddressBookName='WXY' WHERE
 update AddressBook set AddressBookType='Profession', AddressBookName='WXY' WHERE FirstName='Sharad';
 update AddressBook set AddressBookType='Profession', AddressBookName='WXY' WHERE FirstName='Sai';
 update AddressBook set AddressBookType='Profession', AddressBookName='WXY' WHERE FirstName='Vijay';
+USE AddressBookServiceDB;
 
+--UC10
+SELECT AddressBookType,COUNT(AddressBookType) AS TOTALCOUNT FROM AddressBook GROUP BY AddressBookType;
 
 
 
